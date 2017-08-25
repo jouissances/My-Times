@@ -1,41 +1,211 @@
 /* Global CSS */
 * {
-    
+    top: 0;
+    left: -8px;
 }
 
 /* Header CSS */
 header {
     display: flex;
     justify-content: space-between;
-    width: auto;
+    align-items: center;
+    width: 100%;
+    height: 80px;
     font-family: Verdana;
     font-size: 14px;
     font-weight: bold;
-    padding-bottom: 10px;
+    background-color: white;
     border-bottom: 1px solid black;
+    position: fixed;
+    z-index: 5;
 }
-    #top-menu img {
-        padding: 0 10px;
-    }
     
-    #top-menu #title {
+    header #title {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         color: MediumAquamarine;
-        padding: 0px 10px;
+        padding: 0 10px;
+        width: auto;
     }
-    
-    #top-menu nav span {
+
+    header img {
+        padding: 0 10px;
+    }
+
+    header nav span {
         display: inline-block;
-        padding: 20px 10px;
+        padding: 20px 0;
+        margin-right: 30px;
     }
     
-    #top-menu nav a {
+    header nav a {
         color: black;
+}
+
+/* News blocks */
+.content {
+    display: flex;
+    margin: 18px 0 178px 0;
+    position: relative;
+    top: 98px;
+}
+
+.narrative {
+    font-family: Georgia;
+    font-size: 17px;
+    color: black;
+}
+
+.column {
+    margin-right: 30px;
+}
+
+    .column.large {
+        width: 630px;
+        display: flex;
+        flex-direction: column;
     }
 
+        .pic {
+            display: flex;
+            align-items: center;
+            width: inherit;
+            height: 300px;    
+        }
 
+        #pic-1 {
+            background-image: url(../img/img-story-main.png);
+        }
 
+            .headline#main {
+                font-size: 40px;
+                padding: 0 20px;
+            }
 
+.headline#black {
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+        
+        #pic-4 {
+            background-image: url(../img/img-story-2.png);
+            text-align: center;
+            padding: 0 10px;
+        }
+            
+            .headline {
+                font-family: Georgia;
+                font-weight: bold;
+                font-size: 30px;
+                color: white;
+                margin: 0;
+            }
 
+        #pic-5 {
+            background-image: url(../img/img-story-3.png);
+            text-align: center;
+            padding: 0 10px;
+        }
+
+.square-grid {
+    display: flex;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+    .column.medium {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+#news-6 {
+    
+}
+
+        #pic-7 {
+            background-image: url(../img/img-story-1.png);
+            text-align: center;
+            padding: 0 10px;
+        }
+
+    .column.small {
+        width: 240px;
+        display: flex;
+        flex-direction: column;
+    }
+
+        #news-bite h3 {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 41px;
+        }
+
+        #news-bite span {
+            display: block;
+            padding: 11px 20px;
+            border-bottom: 1px solid black;
+            background-color: WhiteSmoke;
+            font-family: Verdana;
+            font-size: 12px;
+            color: DimGray;
+        }
+
+/* End of content */
+
+/* Begin footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: 325px;
+    background-color: MediumAquamarine;
+    margin: auto;
+    font-family: Verdana;
+    font-size: 12px;
+    position: relative;
+    top: 8px;
+    
+}
+
+footer .info {
+    display: block;
+}
+
+footer #bottom-title {
+    font-family: Georgia;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding: 0 25px 0 0;
+    border-right: 2px solid white;
+}
+
+footer nav {
+    display: inline-block;
+    padding: 0 0 0 25px;
+}
+
+footer nav a {
+    font-family: Verdana;
+    font-size: 12px;
+    color: black;
+    font-weight: normal;
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+footer .copyright {
+    display: block;
+}
